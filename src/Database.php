@@ -2,11 +2,14 @@
 
 class Database
 {
-    public function __construct(private string $host,
-                                private string $name,
-                                private string $user,
-                                private string $password)
-    {}
+    public function __construct(public string $host,
+                                public string $name,
+                                public string $user,
+                                public string $password)
+    {
+
+
+    }
         
     public function getConnection(): PDO
     {
